@@ -1,0 +1,72 @@
+version: "3.1"
+
+stories:
+- story: path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - checkpoint: check_mood
+
+- story: handle mood positive
+  steps:
+  - checkpoint: check_mood
+  - intent: mood_happy
+  - action: utter_great_mood
+  - action: utter_work
+  - checkpoint: check_work
+
+- story: handle mood negative
+  steps:
+  - checkpoint: check_mood
+  - intent: mood_unhappy
+  - action: utter_sorry_mood
+  - action: utter_work
+  - checkpoint: check_work
+
+- story: handle work positive
+  steps:
+  - checkpoint: check_work
+  - intent: work_positive
+  - action: utter_great_work
+  - action: utter_manager
+  - checkpoint: check_manager
+
+- story: handle work negative
+  steps:
+  - checkpoint: check_work
+  - intent: work_negative
+  - action: utter_sorry_work
+  - action: utter_manager
+  - checkpoint: check_manager
+
+- story: handle manager positive
+  steps:
+  - checkpoint: check_manager
+  - intent: manager_positive
+  - action: utter_great_manager
+  - action: utter_company
+  - checkpoint: check_company
+
+- story: handle manager negative
+  steps:
+  - checkpoint: check_manager
+  - intent: manager_negative
+  - action: utter_sorry_manager
+  - action: utter_company
+  - checkpoint: check_company
+
+- story: handle company positive
+  steps:
+  - checkpoint: check_company
+  - intent: company_positive
+  - action: utter_great_company
+  - action: utter_connect_thank
+
+
+- story: handle company negative
+  steps:
+  - checkpoint: check_company
+  - intent: company_negative
+  - action: utter_sorry_company
+  - action: utter_sorry_feedback_confirm
+  - action: utter_connect_thank

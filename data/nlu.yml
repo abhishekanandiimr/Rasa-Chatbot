@@ -1,0 +1,265 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - wassup?
+    - hi, how are you?
+    - hi, how are you feeling today?
+    - how's it going?
+    -  Hi
+    - hello there
+    - how's your day going?
+    - Yo
+    - Ola
+
+- intent: mood_happy
+  examples: |
+    - I am doing good
+    - doing good
+    - i am OK
+    - ok
+    - just fine
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I'm doing fine
+    - I'm okay
+    - I'm feeling good
+    - Good Morning, I'm doing okay.
+    - Good Afternoon, I'm doing okay.
+    - so far so good
+    - okay
+    - I' m doing good, how about you?
+    - Fine
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - surviving
+    - not good actually
+    - it's bad
+    - not great
+    - okayish
+    - feeling low
+    - depressed
+    - fine i suppose
+    - burnt out
+    - not engaging
+    - lost
+    - not focused
+    - low on energy
+
+- intent: work_positive
+  examples: |
+    - Its going great
+    - its going good
+    - it is good
+    - its going fine
+    - I am loving it
+    - I'm having a good time
+    - I'm enjoying the work
+    - My work is challenging, but i love it
+    - so far so good
+    - really enjoying it
+    - challenging
+    - amazing
+    - satisfactory
+
+- intent: work_negative
+  examples: |
+    - Its streessful
+    - its hectic
+    - not loving my job
+    - it very stressfull
+    - Its going fine but I am felling little stressed
+    - I am felling little stressed
+    - i am stressed
+    - it's fine
+    - it is fine
+    - just working
+    - just going
+    - stressfull
+    - stressed
+    - not fine
+    - not OK
+    - its killing me
+    - I am feeling stressed due to the hectic work schedule. I feel that the workload can be distributed better in the team
+    - very hectic
+    - very hectic schedule
+    - working overtime
+    - highly stressed
+    - stressfull
+    - not good
+    - work load not distrubuted evenly in team
+    - uneven workload
+    - very hectic schedule
+    - no work-life balance
+    - not enjoying my work
+    - would like to shift
+    - not engaging
+    - felling burnt out
+    - find no purpose
+    - lack of meaning
+    - feels like quiting
+    - quiting
+ 
+- intent: manager_positive
+  examples: |
+    - my manager trusts me
+    - i trust my manager
+    - we are good with each other
+    - he is very supportive
+    - she is very supportive
+    - my manager is very approachable
+    - manager is intelligent and gives good insights
+    - my manager defends the team
+    - he/she manages the work load nicely among teammates
+    - he challenges us to think
+    - he is chill
+    - keeps the mood light and happy
+    - he/she is very hardworking
+    - like a mentor
+    - like a friend
+    - encourages
+    - manages effectively
+    - handels work very well
+
+
+- intent: manager_negative
+  examples: |
+    - he is always busy
+    - she is always busy
+    - he/she doesn't care
+    - he/she is always critical of my work
+    - i don't like my manager
+    - my manger should be changed
+    - he/she should be changed
+    - No, I feel he does not listen or understands me. No, I feel she does not listen or understands me
+    - No, I feel she does not listen or understands me
+    - he doesn't have time
+    - she doesn't have time
+    - he is busy
+    - she is busy
+    - he is always busy
+    - she is always busy
+    - he donot care
+    - she donot care
+    - my manager does not guide me well
+    - my manager is confused most of the times
+    - my manager does favouritism
+    - our though processes are different
+
+- intent: company_positive
+  examples: |
+    - satisfied
+    - very satisfied
+    - i love my company
+    - i love working here
+    - Company culture is great
+    - I love company
+    - great culture
+    - employee friendly
+    - offers rapid growth
+    - great policies
+    - good peer group
+    - lots of leanings
+
+
+- intent: company_negative
+  examples: |
+    - I hate this company
+    - people in this company is not supportive
+    - management is not caring
+    - culture is not good
+    - company culture is bad
+    - the policies are bad
+    - bad culture
+    - peer group is bad
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - good talk
+    - Thanks for this
+    - let's meet again soon
+    - ciao
+    - so long
+    - loved our conversation
+    - adios
+    - allright see you
+    - thank you for your time
+    - Thanks for this
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who am i talking to?
+    - who is responding?
+    - who is it?
+    - are you human?
+    - are you a bot?
+    - are you not a human?
+    - why this
+    - why you
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - what is you address?
+    - I want to date you?
+    - where is Pakistan?
+    - which is the longest river?
+    - what is the salary
+    - ?
