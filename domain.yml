@@ -1,0 +1,74 @@
+version: "3.1"
+
+intents:
+  - greet
+  - mood_happy
+  - mood_unhappy
+  - work_positive
+  - work_negative
+  - manager_positive
+  - manager_negative
+  - company_positive
+  - company_negative
+  - goodbye 
+  - out_of_scope
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you doing?"
+
+  utter_great_mood:
+  - text: "Great! Good to hear that. Let's discuss about you work."
+
+  utter_great_work:
+  - text: "Glad to hear that. Let's discuss about your manager."
+
+  utter_great_manager:
+  - text: "Perfect. Now let's talk about company."
+
+  utter_great_company:
+  - text: "Its heartening to hear that."
+
+  utter_sorry_mood:
+  - text: "Oh! Sorry to hear that. Let's discuss about your work, manager and company to understand your feedback."
+
+  utter_sorry_work:
+  - text: "We understand that you have difficulties realted to your work. We have taken your feedback and will connect with HR to understand your issues. Now Let's understand about your manager."
+
+  utter_sorry_feedback:
+  - text: "Oh! Sorry to hear that. Can you please elaborate more so I can help you with this"
+
+  utter_sorry_manager:
+  - text: "We understand that you have difficulties related to your manager. Someone from HR will connect with you within next 3 working day to understand your issues. Now Let's understand about your company."
+
+  utter_sorry_company:
+  - text: "We would like to understand more about your feedback to make this company better. Let's connect with HR to understand your issues."
+
+  utter_sorry_feedback_confirm:
+  - text: "Thanks for feedback. We have taken note of it"
+
+  utter_work:
+  - text: "How is your work going?"
+
+  utter_manager:
+  - text: "How is your professional relation with your manager?"
+
+  utter_company:
+  - text: "How do you feel working for the company?"
+
+  utter_connect_thank:
+  - text: "Thank you for the check in. As the next step HR representative will connect with you to understand your issues."
+
+  utter_goodbye:
+  - text: "Thank you for your time and feedback"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_out_of_scope:
+  - text: "Sorry I didn't get that. Can you rephrase?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
